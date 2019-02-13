@@ -1,6 +1,4 @@
-# LAMP stack demo
-
-How to use LAMP stack development using DevSpaces
+# LAMP stack DevSpaces demo
 
 ## Instructions for running in DevSpaces
 

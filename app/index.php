@@ -20,7 +20,7 @@
     </style>
     <script type="text/javascript">
         $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();   
+            $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
 </head>
@@ -36,7 +36,7 @@
                     <?php
                     // Include config file
                     require_once "config.php";
-                    
+
                     // Attempt select query execution
                     $sql = "SELECT * FROM employees";
                     if($result = mysqli_query($link, $sql)){
@@ -65,7 +65,7 @@
                                         echo "</td>";
                                     echo "</tr>";
                                 }
-                                echo "</tbody>";                            
+                                echo "</tbody>";
                             echo "</table>";
                             // Free result set
                             mysqli_free_result($result);
@@ -75,12 +75,12 @@
                     } else{
                         echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
                     }
- 
+
                     // Close connection
                     mysqli_close($link);
                     ?>
                 </div>
-            </div>        
+            </div>
         </div>
     </div>
 </body>
